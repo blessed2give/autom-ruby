@@ -1,9 +1,11 @@
 class ReferralsController < ApplicationController
   def index
     @referrals = current_user.referrals
+    @user = current_user.id
   end
 
   def new
+    @user = current_user
     @referral = current_user.referrals.new
   end
 
@@ -15,7 +17,7 @@ class ReferralsController < ApplicationController
 
     if @referral.save
       flash[:notice] = "Referral Saved"
-      redirect_to referrals_path
+      redirect_to user_referrals_path
     else
       flash.now[:alert] = "There was an error saving the referral. Please try again."
       render :new

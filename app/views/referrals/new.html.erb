@@ -1,7 +1,7 @@
-<h1>Referrals#new</h1>
+<h1>New Referral</h1>
 <div class="row">
   <div class="col-md-8">
-  <%= form_for @referral do |f| %>
+  <%= form_for [@user, @referral] do |f| %>
     <div class="form-group">
       <%= f.label :firstName %>
       <%= f.text_field :firstName, class: 'form-control', placeholder: "Enter first name" %>
