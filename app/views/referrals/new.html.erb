@@ -1,0 +1,22 @@
+<h1>Referrals#new</h1>
+<div class="row">
+  <div class="col-md-8">
+  <%= form_for @referral do |f| %>
+    <div class="form-group">
+      <%= f.label :firstName %>
+      <%= f.text_field :firstName, class: 'form-control', placeholder: "Enter first name" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :lastName %>
+      <%= f.text_field :lastName, class: 'form-control', placeholder: "Enter last name" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.text_field :email, class: 'form-control', placeholder: "Enter last name" %>
+    </div>
+    <div class="form-group">
+      <%= f.submit "Save", class: 'btn btn-success' %>
+    </div>
+  <% end %>
+</div>
+</div>

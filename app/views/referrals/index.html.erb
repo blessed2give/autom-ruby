@@ -1,0 +1,12 @@
+<h1>All referrals</h1>
+
+<div class="media">
+  <% @referrals.each do |ref| %>
+    <h4>Referral <%= ref.id %></h4>
+    <div class="media-body">
+        <p><%= ref.firstName %></p>
+        <p><%= ref.lastName %></p>
+        <p><%= ref.email %></p>
+      </div>
+    <% end %>
+</div>
