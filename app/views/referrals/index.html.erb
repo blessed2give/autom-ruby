@@ -1,7 +1,10 @@
 <h1><%= current_user.email %> Referrals</h1>
-
 <div class="media">
+  <div class="row pull-right">
+    <%= link_to "New Referral", new_user_referral_path(@user, @referral), class: 'btn btn-primary' %>
+  </div>
   <% @referrals.each do |ref| %>
+  <%-# template to display current user's referrals -%>
     <h4>Referral <%= ref.id %></h4>
     <div class="media-body">
         <p><%= ref.firstName %></p>

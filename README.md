@@ -1,28 +1,16 @@
-== README
+##AutoM - Ruby
+A simple app to allow a user to create referrals and send each referral email notification.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Configuration
+Language: Ruby v. 2.3.3p222
+          Rails 4.2.5
+Make sure to have Rails version 4 or higher.
 
-Things you may want to cover:
+```
+$ cd /project/directory
+$ git clone https://github.com/blessed2give/autom-ruby.git
+$ rails s
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+##Production
+See it in Production: https://rocky-headland-25723.herokuapp.com/
